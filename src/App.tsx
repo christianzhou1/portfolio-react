@@ -1,4 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
+const App: React.FC = () =>{
+  return (
+    <div className='App'>
+      <div className='flex justify-center h-screen bg-slate-400'>
+        <p>Hello, World</p>
+      </div>
+    </div>
+  );
+}
+
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,7 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className="border-4 border-sky-500 rounded-xl p-5">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -21,5 +32,5 @@ function App() {
     </div>
   );
 }
-
+ */
 export default App;

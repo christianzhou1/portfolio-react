@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the first iteration of my portfolio website, created with HTML, CSS, and JavaScript. Current URL: https://portfolio-psi-ashy-43.vercel.app/
 
-## Available Scripts
+## Project Intent
 
-In the project directory, you can run:
+The intention of this project is to learn the basics of frontend development through real-world practice.
 
-### `npm start`
+## Next Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I plan to redesign and improve the layout, as well as implement some new CSS and JavaScript features.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview
 
-### `npm test`
+- Hosted with Vercel
+- Hero, About, Projects, and Contact sections.
+- Spotify embed player.
+- Scroll-to-top button which appears when the page is scrolled down.
+- Fade-into-view of elements as they are scrolled into view.
+- Elements zoom on mouse hover.
+- Additional CSS transitions on mouse actions, CSS shadows, and gradients.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## To-Do List
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ~~Add resume download/display functionality to the CV button in the menu.~~
+- Fold Spotify embeds into a "Music" dropdown, and add descriptions to the right of the dropdown. All future elements in the About section will follow this dropdown style.
+- Add personal experiences with programming to the Projects section (e.g., ShuttleTrak, -2XC3 final lab, this website, and more if I remember any). Could learn to implement CSS grid for this.
+- Add contact information (email, phone, etc.) at the top of the page.
+- Add contact information to the Contact section.
+- Implement scrolling effects (scaling, color, etc.)
+- Customize domain name and add URL to resume.
