@@ -1,6 +1,6 @@
 # Portfolio
 
-This is the first iteration of my portfolio website, created with HTML, CSS, and JavaScript. Current URL: https://portfolio-psi-ashy-43.vercel.app/
+This is my portfolio website using react and typescript. Current URL: https://portfolio-psi-ashy-43.vercel.app/
 
 ## Project Intent
 
