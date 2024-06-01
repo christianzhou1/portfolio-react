@@ -1,13 +1,17 @@
 import React from 'react';
+import Hero from "./components/Hero";
+import Description from "./components/Description";
 const App: React.FC = () =>{
   return (
     <div className='App'>
       <div className='flex justify-center h-screen bg-slate-400'>
         <p>Hello, World</p>
       </div>
+      <Hero />
+      <Description />
     </div>
   );
-}
+};
 
 /* import logo from './logo.svg';
 import './App.css';
