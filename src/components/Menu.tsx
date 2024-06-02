@@ -5,7 +5,7 @@ import MenuButton from "./MenuButton";
 
 const Menu: React.FC = () => {
   return (
-    <div className="flex flex-row w-full md:w-35em lg:w-1/2 xl:w-95% max-w-90% mx-auto mt-10 mb-10 py-2 bg-brunswickGreen justify-around text-2xl border-2 border-russianBlue shadow-lg">
+    <div className="sticky top-0 z-50 backdrop-filter backdrop-blur-md flex flex-row w-full md:w-35em lg:w-2/3 xl:w-95% max-w-90% mx-auto mb-[40vh] mt-10 py-6 bg-brunswickGreen bg-opacity-40 justify-around text-2xl border-2 border-russianBlue shadow-lg">
       <MenuButton href="#about"> About </MenuButton>
       <MenuButton href="#projects"> Projects </MenuButton>
       <MenuButton href="#contact"> Contact </MenuButton>

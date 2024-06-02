@@ -7,22 +7,22 @@ import Menu from "./components/Menu";
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Menu />
-      {/* <Description /> */}
-      <Section
-        titleContent="About Me"
-        descContent="This is the About section description"
-      />
-      <Section
-        titleContent="Projects"
-        descContent="This is the Projects section description"
-      />
-      <Section
-        titleContent="Contact"
-        descContent="This is the Contact section description"
-      />
+      <div className="relative">
+        <Hero />
+        <Menu />
+        <Section
+          titleContent="About Me"
+          descContent="This is the About section description"
+        />
+        <Section
+          titleContent="Projects"
+          descContent="This is the Projects section description"
+        />
+        <Section
+          titleContent="Contact"
+          descContent="This is the Contact section description"
+        />
+      </div>
     </div>
   );
 };

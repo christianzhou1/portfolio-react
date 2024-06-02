@@ -14,3 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  background-attachment: fixed;
+
+  --off-white: #dddddd;
+  --brunswick-green: #003d39;
+  --dutch-white: #e2d4b7;
+  --russian-blue: #0d0630;
+  --carolina-blue: #74b3ce;
+  --fire-engine-red: #c51b29;
+  --blue-graident: linear-gradient(160deg, #0c3279, #87b2cf);
+  --sinopia: #c73e1d;
+  background-image: var(--blue-graident);
+}
