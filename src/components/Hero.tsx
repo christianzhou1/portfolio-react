@@ -14,10 +14,9 @@ const Hero: React.FC = () => {
         for new opportunities to learn and grow as a developer.
       </p> */}
       <Description
-        content="Hi, I'm Christian Zhou. This is my first portfolio website, created May
-        10, 2024 with html, css and maybe js. I'm a computer science student
+        content="Hi, I'm Christian Zhou. This is my portfolio website using React.js and Typescript, created June 1, 2024. I'm a computer science student
         with a passion for creating and developing software. I'm always looking
-        for new opportunities to learn and grow as a developer."
+        for new opportunities to learn and grow as a developer. Cheers!!!!!"
       />
     </div>
   );
