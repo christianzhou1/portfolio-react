@@ -1,8 +1,8 @@
 import React from "react";
-const Description: React.FC = () => {
+const Description = ({ content }: { content: string }) => {
   return (
     <>
-      <p className="text-center">this is a description component</p>
+      <p className="text-center">{content}</p>
     </>
   );
 };

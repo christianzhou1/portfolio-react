@@ -1,13 +1,28 @@
 import React from "react";
 import Hero from "./components/Hero";
-import Description from "./components/Description";
+//import Description from "./components/Description";
 import Header from "./components/Header";
+import Section from "./components/Section";
+import Menu from "./components/Menu";
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <Hero />
-      <Description />
+      <Menu />
+      {/* <Description /> */}
+      <Section
+        titleContent="About Me"
+        descContent="This is the About section description"
+      />
+      <Section
+        titleContent="Projects"
+        descContent="This is the Projects section description"
+      />
+      <Section
+        titleContent="Contact"
+        descContent="This is the Contact section description"
+      />
     </div>
   );
 };
