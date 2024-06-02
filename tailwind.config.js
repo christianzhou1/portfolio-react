@@ -12,10 +12,13 @@ module.exports = {
         fireEngineRed: "#c51b29",
         sinopia: "#c73e1d",
       },
-      // Optionally, define gradients
       backgroundImage: (theme) => ({
         "blue-gradient": "linear-gradient(160deg, #0c3279, #87b2cf)",
       }),
+      boxShadow: {
+        "custom-shadow":
+          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+      },
     },
   },
   plugins: [],

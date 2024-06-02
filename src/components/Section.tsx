@@ -7,7 +7,7 @@ interface SectionProps {
 }
 const Section = ({ titleContent, descContent }: SectionProps) => {
   return (
-    <div className="flex flex-col min-h-screen min-w-full items-center text-off-white border border-red-600">
+    <div className="flex flex-col min-h-screen min-w-full items-center text-off-white">
       <Title content={titleContent} />
       <Description content={descContent} />
     </div>

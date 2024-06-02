@@ -3,7 +3,7 @@ import Description from "./Description";
 import React from "react";
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-[60vh] min-w-full items-center text-off-white border border-yellow-400">
+    <div className="flex flex-col min-h-[60vh] min-w-full items-center text-off-white">
       <h1 className=" font-thin text-8xl mt-44 mb-20 text-offWhite">
         Christian's First Website
       </h1>
