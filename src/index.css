@@ -24,7 +24,29 @@ code {
   --russian-blue: #0d0630;
   --carolina-blue: #74b3ce;
   --fire-engine-red: #c51b29;
-  --blue-graident: linear-gradient(160deg, #0c3279, #87b2cf);
+  --blue-graident: linear-gradient(
+    40deg,
+    rgba(26, 48, 89, 1) 30%,
+    rgba(152, 187, 211, 1) 180%
+  );
   --sinopia: #c73e1d;
-  background-image: var(--blue-graident);
+  //background-image: var(--blue-graident);
+  background-color: #151516;
+}
+/* Change the selection background and text color */
+::selection {
+  background: #ffb7b7; /* background color for the selection */
+  color: #000; /* text color for the selection */
+}
+
+/* For webkit-based browsers (e.g., Chrome, Safari) */
+::-webkit-selection {
+  background: #ffb7b7;
+  color: #000;
+}
+
+/* For Mozilla-based browsers (e.g., Firefox) */
+::-moz-selection {
+  background: #ffb7b7;
+  color: #000;
 }

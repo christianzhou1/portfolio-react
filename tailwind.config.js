@@ -11,6 +11,9 @@ module.exports = {
         carolinaBlue: "#74b3ce",
         fireEngineRed: "#c51b29",
         sinopia: "#c73e1d",
+        backgroundImage: {
+          doggy: "url('/img/doggy.png')",
+        },
       },
       backgroundImage: (theme) => ({
         "blue-gradient": "linear-gradient(160deg, #0c3279, #87b2cf)",

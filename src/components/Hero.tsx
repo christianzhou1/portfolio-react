@@ -4,8 +4,8 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <div className="flex flex-col min-h-[60vh] min-w-full items-center text-off-white">
-      <h1 className=" font-thin text-8xl mt-44 mb-20 text-offWhite">
-        Christian's First Website
+      <h1 className=" font-light text-[6em] mt-36 mb-[25px] text-offWhite hover:scale-105 transition-transform duration-700 ease-in-out cursor-default ">
+        Christian Zhou
       </h1>
       {/* <p className="font-normal mt-10">
         Hi, I'm Christian Zhou. This is my first portfolio website, created May

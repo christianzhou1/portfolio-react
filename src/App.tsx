@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "./components/Hero";
 //import Description from "./components/Description";
-import Header from "./components/Header";
+//import Header from "./components/Header";
+import About from "./components/About";
 import Section from "./components/Section";
 import Menu from "./components/Menu";
 const App: React.FC = () => {
@@ -10,7 +11,7 @@ const App: React.FC = () => {
       <div className="relative">
         <Hero />
         <Menu />
-        <Section
+        <About
           titleContent="About Me"
           descContent="This is the About section description"
         />

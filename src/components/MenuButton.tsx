@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({ children, onClick, href }) => {
         rel="noopener noreferrer"
         className="
           transition-all duration-[400ms] ease-in-out 
-          text-offWhite px-4 py-2 rounded-xl border-2 border-transparent hover:text-russianBlue hover:border-russianBlue hover:scale-110
+          text-offWhite px-4 py-2 rounded-xl border-2 border-transparent hover:border-offWhite hover:scale-110
         "
       >
         {children}
