@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <Menu />
         <About
           titleContent="About Me"
-          descContent="This is the About section description"
+          descContent="Here's some quick info on who I am, what I like, and what I've been up to lately."
         />
         <Section
           titleContent="Projects"

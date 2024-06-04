@@ -35,18 +35,18 @@ code {
 }
 /* Change the selection background and text color */
 ::selection {
-  background: #ffb7b7; /* background color for the selection */
+  background: #fbfbfb; /* background color for the selection */
   color: #000; /* text color for the selection */
 }
 
 /* For webkit-based browsers (e.g., Chrome, Safari) */
 ::-webkit-selection {
-  background: #ffb7b7;
+  background: #fbfbfb;
   color: #000;
 }
 
 /* For Mozilla-based browsers (e.g., Firefox) */
 ::-moz-selection {
-  background: #ffb7b7;
+  background: #fbfbfb;
   color: #000;
 }
