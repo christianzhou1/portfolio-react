@@ -6,10 +6,14 @@ import React from "react";
 interface SectionProps {
   titleContent: string;
   descContent: string;
+  sectionName?: string;
 }
-const About = ({ titleContent, descContent }: SectionProps) => {
+const About = ({ titleContent, descContent, sectionName }: SectionProps) => {
   return (
-    <div className="flex flex-col min-h-screen min-w-full items-center text-off-white">
+    <div
+      id={`${sectionName}`}
+      className="flex flex-col min-h-screen min-w-full items-center text-off-white"
+    >
       <div className="flex flex-row h-full w-[90%] border-y-2 mx-10 mb-20 px-10 border-slate-800">
         <Title content={titleContent} />
       </div>
@@ -31,9 +35,9 @@ const About = ({ titleContent, descContent }: SectionProps) => {
           width="w-[550px]"
           content={
             <div>
-              Listening to music is my favorite thing to do. I plan to update my
-              Spotify top tracks here. Meanwhile here are some hand-picked
-              tracks:
+              Listening to music is my favorite thing to do. I plan to look into
+              the Spotify API and update my Spotify top tracks here
+              automatically. Meanwhile here are some hand-picked tracks:
               <SpotifyEmbed
                 title="Thunder Road"
                 src="https://open.spotify.com/embed/track/56lhDZNQ5J47aog6mGKeGk?utm_source=generator"

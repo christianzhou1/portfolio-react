@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Section from "./components/Section";
 import Menu from "./components/Menu";
+import Projects from "./components/Projects";
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ const App: React.FC = () => {
           titleContent="About Me"
           descContent="Here's some quick info on who I am, what I like, and what I've been up to lately."
         />
-        <Section
+        <Projects
           titleContent="Projects"
           descContent="This is the Projects section description"
         />
