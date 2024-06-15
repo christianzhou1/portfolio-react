@@ -3,7 +3,8 @@ import Hero from "./components/Hero";
 //import Description from "./components/Description";
 //import Header from "./components/Header";
 import About from "./components/About";
-import Section from "./components/Section";
+//import Section from "./components/Section";
+import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Projects from "./components/Projects";
 const App: React.FC = () => {
@@ -20,7 +21,7 @@ const App: React.FC = () => {
           titleContent="Projects"
           descContent="This is the Projects section description"
         />
-        <Section
+        <Contact
           titleContent="Contact"
           descContent="This is the Contact section description"
         />

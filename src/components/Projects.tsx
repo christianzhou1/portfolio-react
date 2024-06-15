@@ -25,7 +25,7 @@ const Projects = ({ titleContent, descContent, sectionName }: SectionProps) => {
   useScript("/embedJS/game.js");
   return (
     <div
-      id={`${sectionName}`}
+      id={`projects`}
       className="flex flex-col min-h-screen min-w-full items-center text-off-white"
     >
       <div className="flex flex-row h-full w-[90%] border-y-2 mx-10 mb-20 px-10 border-slate-800 ">

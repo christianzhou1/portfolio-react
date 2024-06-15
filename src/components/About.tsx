@@ -11,7 +11,7 @@ interface SectionProps {
 const About = ({ titleContent, descContent, sectionName }: SectionProps) => {
   return (
     <div
-      id={`${sectionName}`}
+      id={`about`}
       className="flex flex-col min-h-screen min-w-full items-center text-off-white z-0"
     >
       <div className="flex flex-row h-full w-[90%] border-y-2 mx-10 mb-20 px-10 border-slate-800">
