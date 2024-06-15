@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my portfolio website using react and typescript. Current URL: https://portfolio-psi-ashy-43.vercel.app/
+This is my portfolio website using react and typescript. Current URL: https://portfolio-react-iota-five.vercel.app/
 
 ## Project Intent
 
