@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Parallax</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .overlay-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="overlay-div">
+      <!-- Content of the overlay div -->
+    </div>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const particleCount = 100;
+      const maxDepth = 5;
+
+      // Initialize particles
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          baseX: Math.random() * canvas.width, // Initial base position
+          baseY: Math.random() * canvas.height, // Initial base position
+          depth: Math.random() * maxDepth,
+        });
+      }
+
+      function drawParticles() {
+        //ctx.fillStyle = "rgba(0, 0, 0, 0)";
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p) => {
+          //const size = (1 - p.depth / maxDepth) * 5 + 1;
+          const size = (p.depth / maxDepth) * 5 + 1;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(111, 125, 140, ${1 - p.depth / maxDepth})`;
+          ctx.fill();
+        });
+      }
+
+      let mouseX = canvas.width / 2;
+      let mouseY = canvas.height / 2;
+
+      canvas.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        //console.log(`Mouse position: x=${mouseX}, y=${mouseY}`);
+      });
+
+      function animate() {
+        //console.log("Animating...");
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        particles.forEach((p, index) => {
+          const displacementX =
+            (mouseX - centerX) * (1 - (p.depth / maxDepth) * 5) * 0.01;
+          const displacementY =
+            (mouseY - centerY) * (1 - (p.depth / maxDepth) * 5) * 0.1;
+          p.x = p.baseX + displacementX;
+          p.y = p.baseY + displacementY;
+          /* console.log(
+            `Particle ${index}: x=${p.x}, y=${p.y}, displacementX=${displacementX}, displacementY=${displacementY}`
+          ); */
+        });
+
+        drawParticles();
+        requestAnimationFrame(animate);
+      }
+
+      // Add a window resize event listener to handle resizing the canvas
+      window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+
+      // Start animation
+      animate();
+    </script>
+  </body>
+</html>

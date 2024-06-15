@@ -22,11 +22,11 @@ const useScript = (url: string) => {
 
 const Projects = ({ titleContent, descContent, sectionName }: SectionProps) => {
   console.log("Projects component mounted");
-  useScript("/js/game.js");
+  useScript("/embedJS/game.js");
   return (
     <div
       id={`${sectionName}`}
-      className="flex flex-col min-h-screen min-w-full items-center text-off-white "
+      className="flex flex-col min-h-screen min-w-full items-center text-off-white"
     >
       <div className="flex flex-row h-full w-[90%] border-y-2 mx-10 mb-20 px-10 border-slate-800 ">
         <Title content={titleContent} />
