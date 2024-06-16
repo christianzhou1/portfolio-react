@@ -39,30 +39,51 @@
       canvas.height = window.innerHeight;
 
       const particles = [];
-      const particleCount = 100;
+      const particleCount = 20;
       const maxDepth = 5;
 
       // Initialize particles
       for (let i = 0; i < particleCount; i++) {
+        let depth = Math.random() * maxDepth;
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           baseX: Math.random() * canvas.width, // Initial base position
           baseY: Math.random() * canvas.height, // Initial base position
-          depth: Math.random() * maxDepth,
+          depth: depth,
+          startAngle: Math.random() * Math.PI * 2,
+          endAngle: Math.random() * Math.PI * 2,
+          lineWidth: Math.random() * 3 ** 3 + 10,
+          //strokStyle: `rgba`
+          color: `${Math.random() * 200 + 0}, ${Math.random() * 200 + 0}, ${
+            Math.random() * 200 + 50
+          }`,
+          size: (depth / maxDepth) * Math.random() * 6 ** 3 + 0,
         });
       }
 
       function drawParticles() {
-        //ctx.fillStyle = "rgba(0, 0, 0, 0)";
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        //ctx.fillStyle = "rgb(0 0 0 / 20%)";
+        ctx.fillStyle = "rgb(15,15,15)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        /* ctx.beginPath();
+        ctx.rect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "rgba(21,21,22,0.12)";
+        ctx.fill(); */
+
         particles.forEach((p) => {
           //const size = (1 - p.depth / maxDepth) * 5 + 1;
-          const size = (p.depth / maxDepth) * 5 + 1;
+          //const size = (p.depth / maxDepth) * 1 + 30;
           ctx.beginPath();
-          ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(111, 125, 140, ${1 - p.depth / maxDepth})`;
-          ctx.fill();
+          ctx.arc(p.x, p.y, p.size, p.startAngle, p.endAngle);
+          //ctx.fillStyle = `rgba(111, 125, 140, ${1 - p.depth / maxDepth})`;
+          //ctx.fill();
+          //ctx.strokeStyle = `rgba(111, 125, 140, ${1 - (p.depth / maxDepth) * 1})`;
+          ctx.strokeStyle = `rgba(${p.color}, ${
+            1 - (p.depth / maxDepth) * 0.5
+          })`;
+          ctx.lineWidth = p.lineWidth || 1;
+          ctx.stroke();
         });
       }
 
@@ -81,9 +102,9 @@
         const centerY = canvas.height / 2;
         particles.forEach((p, index) => {
           const displacementX =
-            (mouseX - centerX) * (1 - (p.depth / maxDepth) * 5) * 0.01;
+            (mouseX - centerX) * (1 - (p.depth / maxDepth) * 1) * 0.03;
           const displacementY =
-            (mouseY - centerY) * (1 - (p.depth / maxDepth) * 5) * 0.1;
+            (mouseY - centerY) * (1 - (p.depth / maxDepth) * 1) * 0.6;
           p.x = p.baseX + displacementX;
           p.y = p.baseY + displacementY;
           /* console.log(

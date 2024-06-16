@@ -13,12 +13,12 @@ const Hero: React.FC = () => {
           //backgroundAttachment: "fixed",
           width: "100%",
           height: "100vh",
-          backgroundColor: "rgb(16, 23, 25)",
+          backgroundColor: "#151516",
           zIndex: 0,
         }}
       />
       <div className="relative flex flex-col min-h-[60vh] min-w-full items-center text-off-white z-0 pointer-events-none">
-        <h1 className=" font-light text-[6em] mt-36 mb-[25px] text-offWhite hover:scale-105 transition-transform duration-700 ease-in-out cursor-default ">
+        <h1 className=" font-bold text-[6em] mt-36 mb-[25px] text-offWhite hover:scale-105 transition-transform duration-700 ease-in-out cursor-default drop-shadow-[0_5px_10px_rgba(0,0,0,0.8)]">
           Christian Zhou
         </h1>
         {/* <p className="font-normal mt-10">
