@@ -19,7 +19,7 @@ const App: React.FC = () => {
         />
         <Projects
           titleContent="Projects"
-          descContent="This is the Projects section description"
+          descContent="What I created, and what I'm working on."
         />
         <Contact
           titleContent="Contact"

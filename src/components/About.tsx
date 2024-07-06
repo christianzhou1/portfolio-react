@@ -54,14 +54,31 @@ const About = ({ titleContent, descContent, sectionName }: SectionProps) => {
           }
         />
         <Card
-          content={<>card content</>}
-          title="Card Title"
-          description="Card Description"
+          content={
+            <>
+              I have been playing the piano for 10 years and completed the RCM
+              Level 9 Performance Exam.
+            </>
+          }
+          title="Piano"
+          description=""
         />
         <Card
-          content={<>card content</>}
-          title="Card Title"
-          description="Card Description"
+          content={
+            <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center justify-center w-40 h-grow p-5 bg-slate-400 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-default">
+                <a
+                  href="https://christianzhou2004.wordpress.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Link
+                </a>
+              </div>
+            </div>
+          }
+          title="WordPress Blog"
+          description="I will try to update my journey in coding and more!"
         />
       </div>
     </div>
