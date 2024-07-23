@@ -10,7 +10,7 @@ const Menu: React.FC = () => {
       <MenuButton href="#projects"> Projects </MenuButton>
       <MenuButton href="#contact"> Contact </MenuButton>
       <MenuButton href="https://github.com/christianzhou1"> Github </MenuButton>
-      <MenuButton href="/pdf/April_22_2024_Christian_Zhou_Resume.pdf">
+      <MenuButton href="\pdf\July_21_2024_Christian_Zhou_Resume.pdf">
         Resume
       </MenuButton>
     </div>
